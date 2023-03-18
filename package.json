@@ -15,23 +15,17 @@
     "main": "authWidget.js",
     "dependencies": {
         "aws-amplify": "^5.0.18",
-        "aws-sdk": "2.316.0",
         "formik": "^2.2.9",
-        "mobx": "^6.7.0",
-        "mobx-react": "^7.6.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-select": "^5.7.0",
-        "react-tabs": "^6.0.0",
-        "semantic-ui-css": "^2.5.0",
-        "semantic-ui-react": "^2.1.4",
-        "uuid": "^3.1.0"
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@babel/plugin-proposal-class-properties": "^7.1.0",
         "@babel/plugin-proposal-decorators": "^7.1.6",
         "codeglue": "git+https://github.com/SmilesAir/codeglue.git",
         "eslint": "^4.19.1",
-        "eslint-plugin-react": "^7.11.1"
+        "eslint-plugin-react": "^7.11.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     }
 }
