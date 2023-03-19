@@ -1,12 +1,8 @@
-/* eslint-disable no-alert */
+import React, { Component } from "react"
+import { Amplify, Auth, Hub } from "aws-amplify"
+import { Formik, Form, Field, ErrorMessage } from "formik"
 
-const React = require("react")
-const { Amplify, Auth, Hub } = require("aws-amplify")
-const { Formik, Form, Field, ErrorMessage } = require("formik")
-
-require("./authWidget.less")
-
-module.exports = class AuthWidget extends React.Component {
+export default class AuthWidget extends Component {
     constructor(props) {
         super(props)
 
