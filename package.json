@@ -1,6 +1,6 @@
 {
   "name": "react-cognito-auth-widget",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple React widget using AWS Amplify to connect with Cognito",
   "main": "index.js",
   "scripts": {
