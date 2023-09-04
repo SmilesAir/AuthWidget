@@ -38,7 +38,7 @@ export class AuthWidget extends Component {
                 }
             } else if (event === "autoSignIn_failure") {
                 alert("Auto Sign in Failure")
-            } else if (payload.event === "signIn") {
+            } else if (event === "signIn") {
                 console.log("signed in", payload.data)
                 this.state.username = payload.data.username
                 this.state.email = payload.data.attributes.email
@@ -49,9 +49,9 @@ export class AuthWidget extends Component {
                 if (this.props.signInCallback !== undefined) {
                     this.props.signInCallback(this.state.username)
                 }
-            } else if (payload.event === "signOut") {
+            } else if (event === "signOut") {
                 console.log("signed out", payload.data)
-                this.state.username = payload.data.username
+                this.state.username = ""
                 this.state.email = ""
                 this.state.isSignedIn = false
                 this.state.state = "home"

@@ -62,7 +62,7 @@ var AuthWidget = /*#__PURE__*/function (_Component) {
         }
       } else if (event === "autoSignIn_failure") {
         alert("Auto Sign in Failure");
-      } else if (payload.event === "signIn") {
+      } else if (event === "signIn") {
         console.log("signed in", payload.data);
         _this.state.username = payload.data.username;
         _this.state.email = payload.data.attributes.email;
@@ -72,9 +72,9 @@ var AuthWidget = /*#__PURE__*/function (_Component) {
         if (_this.props.signInCallback !== undefined) {
           _this.props.signInCallback(_this.state.username);
         }
-      } else if (payload.event === "signOut") {
+      } else if (event === "signOut") {
         console.log("signed out", payload.data);
-        _this.state.username = payload.data.username;
+        _this.state.username = "";
         _this.state.email = "";
         _this.state.isSignedIn = false;
         _this.state.state = "home";
